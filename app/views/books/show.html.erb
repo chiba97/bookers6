@@ -60,7 +60,7 @@
               <% end %>
             </td>
             <td>
-              <%= book_comment.comment %>
+              <%= simple_format book_comment.comment %>
             </td>
             <td>
               <% if book_comment.user == current_user %>
