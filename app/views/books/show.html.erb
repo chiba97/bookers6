@@ -26,7 +26,7 @@
               <%= render "favorites/favorite-btn", book: @book %>
             </td>
             
-            <td>コメント数: <%= @book.book_comments.count %></td>
+            <td id = "book_<%= @book.id %>" >コメント数: <%= @book.book_comments.count %></td>
             
             <% if current_user.id == @book.user_id %>
               <td>
