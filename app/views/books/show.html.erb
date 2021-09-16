@@ -46,7 +46,7 @@
       
       
       <div>
-        <%= form_with(model:[@book,@book_comment],remote: true, class: "form") do |f| %>
+        <%= form_with(model:[@book,@book_comment],class: "form") do |f| %>
         <div class="form-group">
           <%= f.text_area :comment, size: "100x6" %>
         </div>
